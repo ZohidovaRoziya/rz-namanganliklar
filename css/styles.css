@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dotted blue;
+  outline-offset: 3px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  widows: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #000;
+}
+
+/* SITE HEADER Css Start   */
+
+.site-header {
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-right {
+  display: flex;
+}
+
+.site-logo {
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.site-logo-img {
+  width: 270px;
+  height: 45px;
+  border-radius: 7px;
+  padding: 9px 6px;
+  background-color: #fff;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.header-info-img {
+  margin-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 10x;
+}
+
+.site-header-left {
+  display: flex;
+}
+
+.site-header-search {
+  width: 275px;
+  height: 45px;
+  border-radius: 60px;
+  border: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+}
+
+.selectionLang {
+  width: 70px;
+  height: 40px;
+  display: inline-block;
+  padding: 0px;
+  padding-top: 9px;
+  background: #dce6ff;
+  border-radius: 39px;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 3px;
+}
+
+.langUz {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: -10px;
+  padding: 9px 10px;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.langRu {
+  padding: 0;
+  margin-top: 5px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #a6a6a6;
+  text-transform: uppercase;
+}
+
+.site-header-btn {
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0px;
+  padding: 13px 20px;
+  background-color: #7296ec;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 20px;
+}
+
+/* SITE NAV Css Start  */
+
+.site-nav{
+    padding-top:40px;
+}
+
+.site-nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-nav-item:not(:first-child) {
+  margin-left:45px;
+  padding-bottom: 20px;
+}
+
+.site-nav-item-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #7f7f7f;
+}
