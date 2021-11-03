@@ -11,6 +11,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+  font-family: "Rubik","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .container {
@@ -20,7 +23,6 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  border: 1px solid #000;
 }
 
 /* SITE HEADER Css Start   */
@@ -141,16 +143,16 @@ body {
 
 .site-nav{
     padding-top:40px;
-}
-
-.site-nav-list {
+  }
+  
+  .site-nav-list {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .site-nav-item:not(:first-child) {
-  margin-left:45px;
+  margin-left:29.7px;
   padding-bottom: 20px;
 }
 
@@ -158,8 +160,24 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
   color: #7f7f7f;
+}
+
+.site-line{
+  border:0px;
+  height: 2px;
+  background-color: #D1D1D1;
+}
+
+/* SITE ASIDE Css Strat   */
+
+.site-aside{
+  padding:30px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.aside-img{
+  border-radius:9px;
 }
