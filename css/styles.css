@@ -49,23 +49,44 @@ body {
 }
 
 .site-logo-img {
-  width: 270px;
+  width: 276px;
   height: 45px;
   border-radius: 7px;
-  padding: 9px 6px;
+  padding: 9px 0px 8px 6px;
   background-color: #fff;
 }
 
-.header-info {
+.rates-content{
   display: flex;
   align-items: center;
-  margin-left: 15px;
+  justify-content: space-between;
+  margin-left: 35px;
 }
 
-.header-info-img {
-  margin-left: 35px;
-  margin-top: 10px;
-  margin-bottom: 10x;
+.rates-wrap{
+  margin: 0;   
+  padding: 0;
+  margin-left:25px;
+  padding-top: 13px;
+  margin-bottom: 13px;
+}
+
+.rates-wrap:not(:last-child){
+  margin-left:0px;
+}
+
+.dollar-icon{
+font-style: normal;
+font-weight: bold;
+font-size:18px;
+line-height: 19px;
+color: #2959CE;
+
+}
+
+.dollar-number{
+  color: #555;
+  font-size:16px;
 }
 
 .site-header-left {
@@ -77,9 +98,12 @@ body {
   height: 45px;
   border-radius: 60px;
   border: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 45px;
+  padding: 15px 0px 15px 41px;
+  background-image: url("/images/site-header-search.icon.svg");
+  background-repeat: no-repeat;
+  background-position-x:15px;
+  background-position-y:15px;
+
 }
 
 .selectionLang {
@@ -137,6 +161,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 /* SITE NAV Css Start  */
@@ -147,6 +172,7 @@ body {
   
   .site-nav-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
