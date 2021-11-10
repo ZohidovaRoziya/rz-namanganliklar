@@ -18,10 +18,12 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
+    
     <!-- SITE HEADER Start  -->
-    <header class="site-header">
-      <header class="site-header-top">
+    <header class="site-header"> 
+      <div class="site-header__top">
         <div class="container header-container">
           <div class="site-header-right">
             <a class="site-logo" href="index.html">
@@ -47,8 +49,10 @@
             </div>
           </div>
           <div class="site-header-left">
-            <form>
-              <input class="site-header-search" type="text" placeholder="Поиск" />
+
+            <!-- GLOBAL SEARCH Start   -->
+            <form class="site-global-search" action="https://echo.htmlacademy.ru">
+              <input class="site-global-search-input" type="text" placeholder="Поиск" aria-label="Поиск" required />
             </form>
             <span class="selectionLang">
               <a class="langUz" href="#">уз</a>
@@ -57,41 +61,41 @@
             <a href="#" class="site-header-btn">Войти</a>
           </div>
         </div>
-      </header>
+      </div>
             <!-- NAV Start  -->
             <nav class="site-header-nav">
               <div class="container">
                 <ul class="site-nav-list">
       
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Главное</a>
+                    <a class="site-nav-item-link" href="#">Главное</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Интересное</a>
+                    <a class="site-nav-item-link" href="#">Интересное</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Экономика</a>
+                    <a class="site-nav-item-link" href="#">Экономика</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Политика</a>
+                    <a class="site-nav-item-link" href="#">Политика</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Общество</a>
+                    <a class="site-nav-item-link" href="#">Общество</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Технологии</a>
+                    <a class="site-nav-item-link" href="#">Технологии</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Спорт</a>
+                    <a class="site-nav-item-link" href="#">Спорт</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Культура</a>
+                    <a class="site-nav-item-link" href="#">Культура</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Происшествия</a>
+                    <a class="site-nav-item-link" href="#">Происшествия</a>
                   </li>
                   <li class="site-nav-item">
-                    <a href="#" class="site-nav-item-link">Наука</a>
+                    <a class="site-nav-item-link" href="#">Наука</a>
                   </li>
       
                 </ul>
@@ -103,87 +107,141 @@
             <!-- ASIDE Star  -->
             <aside class="site-header-aside">
               <div class="container">
-                <img
-                  class="aside-img"
-                  src="images/optimize.jpg"
-                  alt="reklama uchun rasm"
-                  width="1200"
-                  height="150"
-                  srcset="images/optimize.jpg 1x, images/optimize@2.jpg 2x"
-                />
+                <a class="aside-banner-link" href="https://kun.uz" target="_blank">
+                  <img
+                    class="aside-banner-img"
+                    src="images/optimize.jpg"
+                    alt="reklama uchun rasm"
+                    width="1200"
+                    height="150"
+                    srcset="images/optimize.jpg 1x, images/optimize@2.jpg 2x"
+                  />
+                </a>
               </div>
             </aside>
     </header>
 
     <!-- MAIN Start  -->
-    <main>
+    <main class="site-main">
 
-      <section class="hero">
+      <!-- SITE NEW-Section Start  -->
+      <section class="news-section">
         <div class="container">
-          <div class="hero-content">
+            <div class="top-news">
+                <div class="news-grid">
+                   <article class="news-grid-aricle news-grid-card">
+                    <h3 class="news-card-title">
+                      <a class="news-card-title-link" href="#">
+                        Кандидат на пост канцлера ФРГ Шольц назвал условия коалиционного соглашения
+                      </a>
+                    </h3>
+                    <p class="news-card-text">Лидер Социал-демократической партии Германии (СДПГ) и кандидат на должность...</p>
+                    <a class="news-card-img-link" href="#"><img class="news-card-img" src="./images/КраснаяВесна-img.png" alt="Bino rasmi" width="360" height="165" srcset="images/КраснаяВесна-img.png 1x, images/КраснаяВесна-img@2x.png 2x"></a>
+                    <footer class="article-card-footer">
+                      <img class="card-footer-source-icon-img" src="./images/КраснаяВесна-logo.svg" alt="card icon rasmi" width="20" height="20">
+                      <div class="card-source-wrapper">
+                        <span class="card-source-info">ИА Красная Весна</span>
+                        <time datetime="2021-11-10T14:37:00">15:55</time>
+                      </div>
+                    </footer>
+                  </article>
 
-            <div class="hero-card">
-              <h3 class="hero-card-heading">Кандидат на пост канцлера ФРГ Шольц назвал условия коалиционного соглашения</h3>
-              <p class="hero-card-text">Лидер Социал-демократической партии Германии (СДПГ) и кандидат на должность...</p>
-              <img class="hero-card-img" src="images/КраснаяВесна-img.png" alt="Bino rasmi" width="360" height="165" srcset="images/КраснаяВесна-img.png 1x, images/КраснаяВесна-img@2x.png 2x">
-              <div class="hero-card-footer">
-                <img class="hero-card-footer-img" src="images/КраснаяВесна-logo.svg" width="20" height="20">
-                <p class="hero-card-footer-info">ИА Красная Весна 15:55</p>
-              </div>
+                  <article class="news-grid-aricle news-grid-card">
+                    <h3 class="news-card-title">
+                      <a class="news-card-title-link" href="#">
+                        Ученые доказали экспериментальным путем пользу покровных культур
+                      </a>
+                    </h3>
+                    <p class="news-card-text"> 
+                      Новое исследование ученых университета Иллинойса объединяет полевые данные... 
+                    </p>
+                    <a class="news-card-img-link" href="#"><img class="news-card-img" src="./images/пшеница-img.png" alt="bugdoy rasmi" width="360" height="165" srcset="images/пшеница-img.png 1x, images/пшеница-img@2x.png 2x"></a>
+                    <footer class="article-card-footer">
+                      <img class="card-footer-source-icon-img" src="./images/gazeta-logo.svg" alt="cardLogo rasmi" width="20" height="20">
+                      <div class="card-source-wrapper">
+                        <span class="card-source-info">Газета.Ru</span>
+                        <time datetime="2021-11-10T14:37:00">12:54</time>
+                      </div>
+                    </footer>
+                  </article>
+
+                  <article class="news-grid-aricle news-grid-card">
+                    <h3 class="news-card-title">
+                      <a class="news-card-title-link" href="#">
+                        Baidu запустила публичный<br> сервис роботакси Apollo Go в<br> Шанхае
+                      </a>
+                    </h3>
+                    <p class="news-card-text"> 
+                      Автопарк Baidu состоит из модифицированных электромобилей EV... 
+                    </p>
+                    <a class="news-card-img-link" href="#"><img class="news-card-img" src="./images/Хайтек-img.png" alt="bu yerda mashina va qiz rasmi bor" width="360" height="165" srcset="images/Хайтек-img.png 1x, images/Хайтек-img@2x.png 2x"></a>
+                    <footer class="article-card-footer">
+                      <img class="card-footer-source-icon-img" src="./images/Хайтек-logo.svg" alt="logo card rasm" width="20" height="20">
+                      <div class="card-source-wrapper">
+                        <span class="card-source-info">Хайтек+</span>
+                        <time datetime="2021-11-10T14:37:00">13:44</time>
+                      </div>
+                    </footer>
+                  </article>
+
+                  <article class="news-grid-aricle news-grid-card">
+                    <h3 class="news-card-title">
+                      <a class="news-card-title-link" href="#">
+                        Стали известны ёмкости аккумуляторов всех моделей iPhone 13
+                      </a>
+                    </h3>
+                    <p class="news-card-text"> 
+                      Во время презентации iPhone 13 Apple придала большое значения...
+                    </p>
+                    <a class="news-card-img-link" href="#"><img class="news-card-img" src="./images/phone-img.png" alt="telefon rasmi" width="360" height="165" srcset="images/phone-img.png 1x, images/phone-img@2x.png 2x"></a>
+                    <footer class="article-card-footer">
+                      <img class="card-footer-source-icon-img" src="./images/digger-logo.svg" alt="digger logo rasmi" width="20" height="20">
+                      <div class="card-source-wrapper">
+                        <span class="card-source-info">Digger.ru</span>
+                        <time datetime="2021-11-10T14:37:00">14:25</time>
+                      </div>
+                    </footer>
+                  </article>
+
+                  <article class="news-grid-aricle news-grid-card">
+                    <h3 class="news-card-title">
+                      <a class="news-card-title-link" href="#">
+                        Nature: ученые смогли доказать природное происхождение коронавируса SARS-CoV-2
+                      </a>
+                    </h3>
+                    <p class="news-card-text"> 
+                      Во время презентации iPhone 13 Apple придала большое значение...
+                    </p>
+                    <a class="news-card-img-link" href="#"><img class="news-card-img" src="./images/доктор-img.png" alt="doktorlar rasmi" width="360" height="165" srcset="images/доктор-img.png 1x, images/доктор-img@2x.png 2x"></a>
+                    <footer class="article-card-footer">
+                      <img class="card-footer-source-icon-img" src="./images/lenta-logo.svg" alt="lenta icon rasmi" width="20" height="20">
+                      <div class="card-source-wrapper">
+                        <span class="card-source-info">Lenta.ru</span>
+                        <time datetime="2021-11-10T14:37:00">10:54</time>
+                      </div>
+                    </footer>
+                  </article>
+
+                  <article class="news-grid-aricle news-grid-card">
+                    <h3 class="news-card-title">
+                      <a class="news-card-title-link" href="#">
+                        Китайская марка JAC повысила цены на лифтбек и пикап в России
+                      </a>
+                    </h3>
+                    <p class="news-card-text"> 
+                      Две модели китайского бренда JAC из пяти, представленных на российском...
+                    </p>
+                    <a class="news-card-img-link" href="#"><img class="news-card-img" src="./images/car-img.png" alt="qora moshina rasmi" width="360" height="165" srcset="images/car-img.png 1x, images/car-img@2x.png 2x"></a>
+                    <footer class="article-card-footer">
+                      <img class="card-footer-source-icon-img" src="./images/Тарантас-logo.svg" alt="article icon rasmi" width="20" height="20">
+                      <div class="card-source-wrapper">
+                        <span class="card-source-info">Тарантас Ньюс</span>
+                        <time datetime="2021-11-10T14:37:00">10:44</time>
+                      </div>
+                    </footer>
+                  </article>
+                </div>
             </div>
-
-              <div class="hero-card">
-              <h3 class="hero-card-heading">Ученые доказали экспериментальным путем пользу покровных культур</h3>
-              <p class="hero-card-text">Новое исследование ученых университета Иллинойса объединяет полевые данные... </p>
-              <img class="hero-card-img" src="images/пшеница-img.png" alt="bug'doy rasmi" width="360" height="165" srcset="images/пшеница-img.png 1x, images/пшеница-img@2x.png 2x">
-              <div class="hero-card-footer">
-                <img class="hero-card-footer-img" src="images/gazeta-logo.svg" width="20" height="20">
-                <p class="hero-card-footer-info">Газета.Ru 12:54</p>
-              </div>
-            </div>
-
-
-            <div class="hero-card">
-              <h3 class="hero-card-heading">Baidu запустила публичный<br> сервис роботакси Apollo Go в Шанхае</h3>
-              <p class="hero-card-text">Автопарк Baidu состоит из модифицированных электромобилей EV... </p>
-              <img class="hero-card-img" src="images/Хайтек-img.png" alt="qiz mashina oldida" width="360" height="165" srcset="images/Хайтек-img.png 1x, images/Хайтек-img@2x.png 2x">
-              <div class="hero-card-footer">
-                <img class="hero-card-footer-img" src="images/Хайтек-logo.svg" width="20" height="20">
-                <p class="hero-card-footer-info">Хайтек+ 13:44</p>
-              </div>
-            </div>
-
-            <div class="hero-card">
-              <h3 class="hero-card-heading">Стали известны ёмкости аккумуляторов всех моделей iPhone 13</h3>
-              <p class="hero-card-text">Во время презентации iPhone 13 Apple придала большое значения...</p>
-              <img class="hero-card-footer-img" src="images/phone-img.png" alt="telefon rasmi" width="360" height="165" srcset="images/phone-img.png 1x, images/phone-img@2x.png 2x" >
-              <div class="hero-card-footer">
-                <img class="hero-card-footer-img" src="images/digger-logo.svg" width="20" height="20">
-                <p class="hero-card-footer-info">Digger.ru 14:25</p>
-              </div>
-            </div>
-
-             <div class="hero-card">
-              <h3 class="hero-card-heading">Nature: ученые смогли доказать природное происхождение коронавируса SARS-CoV-2</h3>
-              <p class="hero-card-text">Во время презентации iPhone 13 Apple придала большое значение...</p>
-              <img class="hero-card-img" src="images/доктор-img.png" alt="doktorlar rasmi" width="360" height="165" srcset="images/доктор-img.png 1x, images/доктор-img@2x.png 2x">
-              <div class="hero-card-footer">
-                <img class="hero-card-footer-img" src="images/lenta-logo.svg" width="20" height="20">
-                <p class="hero-card-footer-info">Lenta.ru 10:54</p>
-              </div>
-            </div>
-
-         <div class="hero-card">
-              <h3 class="hero-card-heading">Китайская марка JAC повысила цены на лифтбек и пикап в<br> России</h3>
-              <p class="hero-card-text">Две модели китайского бренда JAC из пяти, представленных на российском...</p>
-              <img class="hero-card-img" src="images/car-img.png" alt="moshinalarni rasmi" width="360" height="165" srcset="images/car-img.png 1x, images/car-img@2x.png 2x">
-              <div class="hero-card-footer">
-                <img class="hero-card-footer-img" src="images/Тарантас-logo.svg" width="20" height="20">
-                <p class="hero-card-footer-info">Тарантас Ньюс 10:44</p>
-              </div>
-            </div>
-
-          </div>
         </div>
       </section>
       

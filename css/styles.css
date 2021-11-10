@@ -22,8 +22,10 @@ body {
   padding: 0;
   background-color: #fff;
   font-family: "Rubik", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#4a4b4c;
 }
 
 .container {
@@ -34,12 +36,6 @@ body {
   padding-left:50px;
   padding-right:50px;
   box-sizing: border-box;
-}
-
-/* SITE MAIN CSS Start   */
-
-main{
-  flex-grow: 1;
 }
 
 /* SITE HEADER Css Start   */
@@ -77,6 +73,7 @@ main{
   align-items: center;
   justify-content: space-between;
   margin-left: 35px;
+  margin-top:8px;
 }
 
 .rates-wrap {
@@ -108,16 +105,23 @@ main{
   display: flex;
 }
 
-.site-header-search {
+/* GLOBAL SEARCH CSS Start   */
+
+.site-global-search {
+  margin-right: 25px;
+}
+
+.site-global-search-input {
   width: 275px;
   height: 45px;
   border-radius: 60px;
+  line-height:normal;
   border: 0px;
   padding: 15px 0px 15px 41px;
   background-image: url("/images/site-header-search.icon.svg");
   background-repeat: no-repeat;
   background-position-x: 15px;
-  background-position-y: 15px;
+  background-position-y: 17px;
 }
 
 .selectionLang {
@@ -219,76 +223,110 @@ main{
   background-color: #fff;
 }
 
-.aside-img {
+.aside-banner-link{
+  display: flex;
+}
+
+.aside-banner-img{
+  width: 100%;
+  display: block;
   border-radius: 9px;
 }
 
-/* HERO SECTION Css Start   */
-
-.hero {
-  /* display: flex; */
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.aside-banner-img:hover{
+  opacity:0.8;
 }
 
-.hero-content {
+.aside-banner-img:active{
+  opacity:0.6;
+}
+
+/* SITE MAIN CSS Start   */
+
+.site-main{
+  flex-grow: 1;
+}
+
+/* NEW SECTION CSS Start  */
+.top-news {
+  padding-top: 50px;
+}
+
+.news-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 0px;
-  margin-bottom: -10px;
-  padding: 10px 0px;
+  margin-left: -10px;
 }
 
-.hero-card {
-  box-sizing: border-box !important;
+.news-grid-aricle {
+  display: flex;
+  flex-direction: column;
   width: 393px;
+  padding: 20px 17px 15px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.news-grid-card {
   background-color: #f6f6f6;
   border-radius: 15px;
-  padding: 20px 17px 0px 17px;
-  margin: 10px 0;
-  margin-bottom: 0px;
 }
 
-.hero-card-heading {
-  font-style: normal;
-  font-weight: 500;
+.news-card-title {
   font-size: 20px;
+  font-weight: 500;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.news-card-title-link {
+  text-decoration: none;
   color: #000;
 }
 
-.hero-card-text {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #4a4b4c;
+.news-card-title-link:hover{
+  color: #2959ce;
+  opacity:0.8;
 }
 
-.hero-card-img {
-  border-radius: 10px;
+.news-card-title-link:active{
+  opacity:0.6;
 }
 
-.hero-card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: start;
+.news-card-text {
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
-.hero-card-footer-img {
-  border-radius: 5px;
-  margin-right: 15px;
+.news-card-img-link{
+  display: flex;
+  margin-top: auto;
 }
 
-.hero-card-footer-info {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #5e5f61;
+.news-card-img {
+  display:inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
+
+.news-card-img:hover{
+  opacity:0.8;
+}
+
+.news-card-img:active{
+  opacity:0.6;
+}
+
+.article-card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer-source-icon-img {
+  margin-right: 10px;
+}
+
+
+
