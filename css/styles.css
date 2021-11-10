@@ -40,7 +40,7 @@ body {
 
 /* SITE HEADER Css Start   */
 
-.site-header-top {
+.site-header__top{
   background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 30px;
