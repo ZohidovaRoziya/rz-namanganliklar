@@ -1,6 +1,5 @@
 /* https://www.figma.com/file/vAaXE281nrboRVTxj5tL8B/NAMANGANLIKLAR-24 */
 /* GLOBAL CSS  */
-
 * {
   box-sizing: border-box !important;
 }
@@ -10,7 +9,7 @@
   outline-offset: 3px;
 }
 
-html{
+html {
   height: 100%;
 }
 
@@ -25,22 +24,22 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color:#4a4b4c;
+  color: #4a4b4c;
 }
 
 .container {
-  width:100%;
+  width: 100%;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding-left:50px;
-  padding-right:50px;
+  padding-left: 50px;
+  padding-right: 50px;
   box-sizing: border-box;
 }
 
 /* SITE HEADER Css Start   */
 
-.site-header__top{
+.site-header__top {
   background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -73,7 +72,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-left: 35px;
-  margin-top:8px;
+  margin-top: 8px;
 }
 
 .rates-wrap {
@@ -115,7 +114,7 @@ body {
   width: 275px;
   height: 45px;
   border-radius: 60px;
-  line-height:normal;
+  line-height: normal;
   border: 0px;
   padding: 15px 0px 15px 41px;
   background-image: url("/images/site-header-search.icon.svg");
@@ -192,12 +191,13 @@ body {
 .site-nav-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .site-nav-item:not(:first-child) {
-  margin-left:34.5px;
+  margin-left: 34.5px;
   padding-bottom: 20px;
 }
 
@@ -207,6 +207,15 @@ body {
   font-weight: 500;
   text-align: center;
   color: #7f7f7f;
+}
+
+.site-nav-item-link:hover{
+  color: #2959ce;
+  opacity: 0.8;
+}
+
+.site-nav-item-link:active{
+  opacity: 0.6;
 }
 
 .site-line {
@@ -223,27 +232,26 @@ body {
   background-color: #fff;
 }
 
-.aside-banner-link{
+.aside-banner-link {
   display: flex;
 }
 
-.aside-banner-img{
+.aside-banner-img {
   width: 100%;
   display: block;
   border-radius: 9px;
 }
 
-.aside-banner-img:hover{
-  opacity:0.8;
+.aside-banner-img:hover {
+  opacity: 0.8;
 }
 
-.aside-banner-img:active{
-  opacity:0.6;
+.aside-banner-img:active {
+  opacity: 0.6;
 }
 
 /* SITE MAIN CSS Start   */
-
-.site-main{
+.site-main {
   flex-grow: 1;
 }
 
@@ -285,13 +293,13 @@ body {
   color: #000;
 }
 
-.news-card-title-link:hover{
+.news-card-title-link:hover {
   color: #2959ce;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
-.news-card-title-link:active{
-  opacity:0.6;
+.news-card-title-link:active {
+  opacity: 0.6;
 }
 
 .news-card-text {
@@ -299,24 +307,24 @@ body {
   margin-bottom: 15px;
 }
 
-.news-card-img-link{
+.news-card-img-link {
   display: flex;
   margin-top: auto;
 }
 
 .news-card-img {
-  display:inline-block;
+  display: inline-block;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
 }
 
-.news-card-img:hover{
-  opacity:0.8;
+.news-card-img:hover {
+  opacity: 0.8;
 }
 
-.news-card-img:active{
-  opacity:0.6;
+.news-card-img:active {
+  opacity: 0.6;
 }
 
 .article-card-footer {
@@ -328,5 +336,100 @@ body {
   margin-right: 10px;
 }
 
+/* SITE ASIDE CSS START  */
+.aside-container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.site-aside-content {
+  width: 100%;
+  max-width: 1050px;
+  background-image: url("../images/aside-card-img.png");
+  background-repeat: no-repeat;
+  display: flex;
+}
 
+.site-aside-text {
+  margin: 0;
+  padding: 24px 397px 2px 29px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.site-aside-link {
+  margin: 25px 71px 25px 0px;
+  padding: 13px 30px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #f78b3b;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.site-aside-link:hover{
+  opacity: 0.8;
+}
+
+.site-aside-link:active{
+  opacity: 0.6;
+}
+
+/* Major section css strart  */
+.majorNews {
+  
+}
+.container {
+}
+.majorNews-heading {
+}
+.majorNews-left-cards-content {
+}
+.majorNews-card {
+}
+.majorNews-card-img-wrap {
+}
+.majorNews-card-img {
+}
+.majorNews-card-info-wrap {
+}
+.majorNews-card-info-title {
+}
+.majorNews-card-info-subtitle {
+}
+.majorNews-card-info-img-icon {
+}
+.majorNews-card-source-wrapper {
+}
+.majorNews-card-source-info {
+}
+.majorNews-card-link {
+}
+.majorNews-right-cards-content {
+}
+.majorNews-right-card {
+}
+.majorNews-right-card-heading {
+}
+.majorNews-right-card-info-wrap {
+}
+.majorNews-right-card-title {
+}
+.majorNews-right-card-subtitle {
+}
+.majorNews-right-card-line {
+}
+.majorNews-rihgt-aside {
+}
+.majorNews-rihgt-aside-img {
+}
