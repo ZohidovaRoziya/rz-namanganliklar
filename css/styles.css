@@ -244,6 +244,7 @@ body {
   width: 100%;
   display: block;
   border-radius: 9px;
+  object-fit: contain;
 }
 
 .aside-banner-img:hover {
@@ -321,6 +322,7 @@ body {
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  object-fit: contain;
 }
 
 .news-card-img:hover {
@@ -412,6 +414,7 @@ body {
 .majorNews-left-cards-content {
   margin: 0;
   padding: 0;
+  
 }
 
 .majorNews-card {
@@ -440,6 +443,7 @@ body {
   width: 210px;
   height: 165px;
   margin: 20px 0px 20px 17px;
+  object-fit: contain;
 }
 
 .majorNews-card-info-wrap {
@@ -553,6 +557,7 @@ body {
   border-radius: 15px;
   width: 393px;
   height: 338px;
+  object-fit:contain;
 }
 
 .majorNews-card-link {
