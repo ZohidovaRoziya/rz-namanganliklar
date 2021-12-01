@@ -1,6 +1,8 @@
 /* _______________________________ B.R.R ______________________________________ */
 /* GLOBAL CSS  */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box !important;
 }
 
@@ -180,11 +182,11 @@ body {
   text-decoration: none;
 }
 
-.site-header-btn:hover{
+.site-header-btn:hover {
   opacity: 0.8;
 }
 
-.site-header-btn:hover{
+.site-header-btn:hover {
   opacity: 0.6;
 }
 
@@ -398,12 +400,13 @@ body {
 
 .majorNews-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 17px;
 }
 
 .majorNews-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -414,7 +417,6 @@ body {
 .majorNews-left-cards-content {
   margin: 0;
   padding: 0;
-  
 }
 
 .majorNews-card {
@@ -527,6 +529,19 @@ body {
   color: #000;
 }
 
+.majorNews-card-info-title-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.majorNews-card-info-title-link:hover {
+  color: #7296ec;
+}
+
+.majorNews-card-info-title-link:active {
+  opacity: 0.6;
+}
+
 .majorNews-right-card-subtitle {
   margin: 0;
   padding: 0;
@@ -557,7 +572,7 @@ body {
   border-radius: 15px;
   width: 393px;
   height: 338px;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .majorNews-card-link {
@@ -581,6 +596,242 @@ body {
   opacity: 0.6;
 }
 
+/* INTERECNO SECTION CSS START  */
+.interecno-link {
+  color: #039bff;
+}
+
+.interecno-section {
+  padding-top: 10px;
+}
+
+.interecno-aside-images {
+  width: 393px;
+  height: 553px;
+  display: flex;
+  object-fit: contain;
+}
+
+/* ARICLE Section Css Start  */
+.majorNews-article-left-cards-content {
+  margin: 0;
+  padding: 0;
+  width: 797px;
+  margin-right: 10px;
+}
+
+.article-icon-content {
+  display: flex;
+  align-items: center;
+}
+
+.article-icon-wrap-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.article-icon-source-info-wrap {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5e5f61;
+}
+
+.article-left-card-header {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.majorNews-article-left-card-img {
+  width: 797px;
+  height: 300px;
+  border-radius: 13px;
+  margin-bottom: 25px;
+}
+
+.majorNews-article-left-card-info {
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.info-last-child {
+  margin-bottom: 50;
+}
+
+.majorNews-article-line {
+  border: 0;
+  height: 2px;
+  background-color: #d2d2d2;
+  margin-bottom: 60px;
+}
+
+/* ARTICLE CARDS LIST CSS START  */
+.acticle-cards-list-header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.article-cards-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.article-cards-item {
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  width: 393px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.article-cards-item-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.article-cards-item-subtitle {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+  margin-bottom: 23px;
+}
+
+/* CONTACT SECTION CSS Start  */
+.contact-section {
+  padding-bottom: 100px;
+}
+
+.contact-cards-content-heading {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.contact-cards-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-top-input-wrapper {
+  display: flex;
+}
+
+.card-name-input {
+  width: 343px;
+  margin: 0;
+  padding: 18px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.email-inp {
+  display: inline-block;
+  width: 696px;
+  opacity: 0.5;
+}
+
+.card-textarea-input {
+  padding: 18px 0px 143px 20px;
+  display: block;
+  width: 696px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.contact-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 17px 30px;
+  background-color: #7297ef;
+  border-radius: 10px;
+  border: 0;
+}
+
+.contact-button:hover{
+  opacity: 0.8;
+}
+
+.contact-button:active{
+  opacity: 0.6;
+}
+
+.contact-card-right {
+  width: 494px;
+  height: 310px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  padding: 40px 25px 40px 25px;
+}
+
+.contact-card-right-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.contact-card-right-subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.contact-card-right-line {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  border: 0px;
+  height: 2px;
+  background-color: #d2d2d2;
+}
+
 /* SITE FOOTER CSS START   */
 .site-footer {
   margin: 0;
@@ -595,6 +846,7 @@ body {
   padding: 0;
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 .site-footer-logo-img {
@@ -603,43 +855,56 @@ body {
   display: flex;
 }
 
-.site-footer-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.site-footer-top-list {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-.site-footer-item {
-  display: inline-block;
+.site-footer-top-item-info {
   margin: 0;
-  padding: 0;
-}
-
-.site-footer-item-text {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
+  padding: ;
+  width: 230px;
   font-weight: normal;
   font-size: 12px;
   line-height: 19px;
   color: #ffffff;
-  width: 230px;
 }
 
-.site-footer-item-link {
+.site-footer-top-links-list {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
-  display: block;
+  list-style-type: none;
+}
+
+.site-footer-top-links-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.site-footer-top-links-item:last-child {
+  margin-bottom: 0px;
+}
+
+.site-footer-top-link {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
   text-decoration: none;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.site-footer-top-link:hover{
+  color:#4267b2;
+}
+
+.site-footer-top-link:active{
+  opacity: 0.6;
 }
 
 .site-footer-line {
