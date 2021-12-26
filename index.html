@@ -48,7 +48,8 @@
 
           <!-- GLOBAL SEARCH Start   -->
           <form class="site-global-search" action="https://echo.htmlacademy.ru">
-            <input class="site-global-search-input" type="text" placeholder="Поиск" aria-label="Поиск" required />
+            <input class="site-global-search-input" name="search" type="text" placeholder="Поиск" aria-label="Поиск"
+              required />
           </form>
           <span class="selectionLang">
             <a class="langUz" href="#">уз</a>
@@ -60,8 +61,8 @@
     </div>
 
     <!-- NAV Start  -->
-    <nav class="site-header-nav">
-      <div class="container">
+    <div class="container">
+      <nav class="site-header-nav">
         <ul class="site-nav-list">
           <li class="site-nav-item">
             <a class="site-nav-item-link" href="./index.html">Главное</a>
@@ -70,34 +71,34 @@
             <a class="site-nav-item-link" href="./interecno.html">Интересное</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Экономика</a>
+            <a class="site-nav-item-link" href="./interecno.html">Экономика</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Политика</a>
+            <a class="site-nav-item-link" href="./interecno.html">Политика</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Общество</a>
+            <a class="site-nav-item-link" href="./interecno.html">Общество</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Технологии</a>
+            <a class="site-nav-item-link" href="./interecno.html">Технологии</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Спорт</a>
+            <a class="site-nav-item-link" href="./interecno.html">Спорт</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Культура</a>
+            <a class="site-nav-item-link" href="./interecno.html">Культура</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Происшествия</a>
+            <a class="site-nav-item-link" href="./interecno.html">Происшествия</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item-link" href="#">Наука</a>
+            <a class="site-nav-item-link" href="./interecno.html">Наука</a>
           </li>
+
         </ul>
 
-        <hr class="site-line" />
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- ASIDE Star  -->
     <aside class="site-header-aside">
@@ -113,9 +114,11 @@
   <!-- MAIN Start  -->
   <main class="site-main">
 
-    <!-- SITE NEW-Section Start  -->
-    <section class="news-section">
-      <div class="container">
+    <!-- CONTAINER START  -->
+    <div class="container">
+
+      <!-- SITE NEW-Section Start  -->
+      <section class="news-section">
         <div class="top-news">
           <div class="news-grid">
             <article class="news-grid-aricle news-grid-card">
@@ -284,23 +287,21 @@
             </article>
           </div>
         </div>
+      </section>
+
+      <div class="aside-container">
+
+        <!-- SITE ASIDE START  -->
+        <aside class="site-aside-content">
+          <h3 class="site-aside-text">
+            Хотите быть в курсе свежих новостей? <br>Включите уведомления!
+          </h3>
+          <a class="site-aside-link" href="#">Включит</a>
+        </aside>
       </div>
-    </section>
 
-    <div class="container aside-container">
-
-      <!-- SITE ASIDE START  -->
-      <aside class="site-aside-content">
-        <h3 class="site-aside-text">
-          Хотите быть в курсе свежих новостей? Включите уведомления!
-        </h3>
-        <a class="site-aside-link" href="#">Включит</a>
-      </aside>
-    </div>
-
-    <!-- MajorNews Section Start   -->
-    <section class="majorNews">
-      <div class="container">
+      <!-- MajorNews Section Start   -->
+      <section class="majorNews">
         <dl>
           <dt>
             <h3 class="majorNews-heading">В мире</h3>
@@ -313,9 +314,9 @@
               <div class="majorNews-card-img-wrap">
                 <img class="majorNews-card-img" src="./images/majorNews-card-img1.png" alt="samalyot rasmi" width="210"
                   height="165" srcset="
-                      ./images/majorNews-card-img1.png    1x,
-                      ./images/majorNews-card-img1@2x.png 2x
-                    " />
+                  ./images/majorNews-card-img1.png    1x,
+                  ./images/majorNews-card-img1@2x.png 2x
+                  " />
               </div>
               <div class="majorNews-card-info-wrap">
                 <h3 class="majorNews-card-info-title">
@@ -344,9 +345,9 @@
               <div class="majorNews-card-img-wrap">
                 <img class="majorNews-card-img" src="./images/majorNews-card-img2.png" alt="bitta ayol rasmi"
                   width="210" height="165" srcset="
-                      ./images/majorNews-card-img2.png    1x,
-                      ./images/majorNews-card-img2@2x.png 2x
-                    " />
+                  ./images/majorNews-card-img2.png    1x,
+                  ./images/majorNews-card-img2@2x.png 2x
+                  " />
               </div>
               <div class="majorNews-card-info-wrap">
                 <h3 class="majorNews-card-info-title">
@@ -374,9 +375,9 @@
               <div class="majorNews-card-img-wrap">
                 <img class="majorNews-card-img" src="./images/majorNews-card-img3.png" alt="bazordagi holat rasmi"
                   width="210" height="165" srcset="
-                      ./images/majorNews-card-img3.png    1x,
-                      ./images/majorNews-card-img3@2x.png 2x
-                    " />
+                  ./images/majorNews-card-img3.png    1x,
+                  ./images/majorNews-card-img3@2x.png 2x
+                  " />
               </div>
               <div class="majorNews-card-info-wrap">
                 <h3 class="majorNews-card-info-title">
@@ -405,9 +406,9 @@
               <div class="majorNews-card-img-wrap">
                 <img class="majorNews-card-img" src="./images/majorNews-card-img4.png" alt="bayroq rasmi" width="210"
                   height="165" srcset="
-                      ./images/majorNews-card-img4.png    1x,
-                      ./images/majorNews-card-img4@2x.png 2x
-                    " />
+                  ./images/majorNews-card-img4.png    1x,
+                  ./images/majorNews-card-img4@2x.png 2x
+                  " />
               </div>
               <div class="majorNews-card-info-wrap">
                 <h3 class="majorNews-card-info-title">
@@ -489,108 +490,109 @@
             <aside class="majorNews-rihgt-aside">
               <img class="majorNews-rihgt-aside-img" src="./images/majorNews-aside-img.png" alt="reklama rasmlari"
                 srcset="
-                    ./images/majorNews-aside-img.png    1x,
-                    ./images/majorNews-aside-img@2x.png 2x
-                  " />
+                ./images/majorNews-aside-img.png    1x,
+                ./images/majorNews-aside-img@2x.png 2x
+                " />
             </aside>
           </div>
         </div>
 
         <a class="majorNews-card-link" href="#">Показать ещё</a>
 
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
 
     <div class="container">
-      <a class="site-footer-logo-link" href="#">
-        <img class="site-footer-logo-img" src="./images/site-logo-footer.svg" alt="site logo">
-      </a>
-
-      <div class="site-footer-top-list">
-        <div class="site-footer-top-item">
-          <p class="site-footer-top-item-info">
-            Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с
-            предварительного письменного разрешения редакции.
-          </p>
-        </div>
-
-        <div class="site-footer-top-item">
-
-          <ul class="site-footer-top-links-list">
-            <li class="site-footer-top-links-item">
-              <a class="site-footer-top-link" href="#">Информация о сайте</a>
-            </li>
-            <li class="site-footer-top-links-item">
-              <a class="site-footer-top-link" href="./contact.html">Напишите нам</a>
-            </li>
-            <li class="site-footer-top-links-item">
-              <a class="site-footer-top-link" href="#">Реклама</a>
-            </li>
-            <li class="site-footer-top-links-item">
-              <a class="site-footer-top-link" href="#">Прислать новость</a>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="site-footer-top-item">
-
-          <ul class="site-footer-top-links-list">
-            <li class="site-footer-top-links-item">
-              <a class="site-footer-top-link" href="#">Использование материалов</a>
-            </li>
-            <li class="site-footer-top-links-item">
-              <a class="site-footer-top-link" href="#">Темы дня</a>
-            </li>
-            <li class="site-footer-top-links-item">
-              <a class="site-footer-top-link" href="#">Наша команда</a>
-            </li>
-          </ul>
-
-        </div>
+      <div class="site-footer-logo-wrapper">
+        <a class="site-footer-logo-link" href="#">
+          <img class="site-footer-logo-img" src="./images/site-logo-footer.svg" alt="site logo" width="264" height="28">
+        </a>
       </div>
 
-      <hr class="site-footer-line">
-
-      <div class="site-footer-bottom">
-        <div class="site-footer-title-wrap">
-          <h4 class="site-footer-bottom-title">Наши<br> социальные сети</h4>
+      <div class="site-footer-about-info-wrapper">
+        <div class="site-footer-about">
+          Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с
+          предварительного письменного разрешения редакции.
         </div>
+        
+        <div class="site-footer-links-wrapper">
+          <ul class="site-footer-links-list">
+            <li class="site-footer-links-item">
+              <a class="site-footer-item-link"  href="#">
+                Информация о сайте
+              </a>
+            </li>
+            <li class="site-footer-links-item">
+              <a class="site-footer-item-link"  href="./contact.html">
+                Напишите нам
+              </a>
+            </li>
+            <li class="site-footer-links-item">
+              <a class="site-footer-item-link"  href="#">
+                Реклама
+              </a>
+            </li>
+            <li class="site-footer-links-item">
+              <a class="site-footer-item-link"  href="#">
+                Прислать новость
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="site-footer-links-list">
+            <li class="site-footer-links-item">
+              <a class="site-footer-item-link"  href="#">
+                Использование материалов
+              </a>
+            </li>
+            <li class="site-footer-links-item">
+              <a class="site-footer-item-link"  href="#">
+                Темы дня
+              </a>
+            </li>
+            <li class="site-footer-links-item">
+              <a class="site-footer-item-link"  href="#">
+                Наша команда
+              </a>
+            </li>
+          </div>
+        </div>
+          
+          <hr class="site-footer-divider">
+          
+          <div class="site-footer-socials-content">
+            <h2 class="site-footer-socials-heading">Наши социальные сети</h2>
 
-        <ul class="site-footer-socials-list">
-          <li class="site-footer-socials-item">
-            <a class="site-footer-social-item-link" href="#">
-              <img class="site-footer-social-img facebook-icon" src="./images/facebook-icon.svg" alt="facebook rasmi">
-            </a>
-          </li>
+            <ul class="site-footer-socials-list">
+              <li class="site-footer-socials-item">
+                <a class="site-footer-socials-link" href="#" target="_blank">
+                  <img class="site-footer-socials-icon" src="./images/icon-facebook.svg" alt="Facebook" width="25" height="25">
+                </a>
+              </li>
+              <li class="site-footer-socials-item">
+                <a class="site-footer-socials-link" href="#" target="_blank">
+                  <img class="site-footer-socials-icon" src="./images/icon-instagram.svg" alt="Instagram" width="25" height="25">
+                </a>
+              </li>
+              <li class="site-footer-socials-item">
+                <a class="site-footer-socials-link" href="#" target="_blank">
+                  <img class="site-footer-socials-icon" src="./images/icon-telegram.svg" alt="Telegramm" width="25" height="25">
+                </a>
+              </li>
+              <li class="site-footer-socials-item">
+                <a class="site-footer-socials-link" href="#" target="_blank">
+                  <img class="site-footer-socials-icon" src="./images/icon-youtube.svg" alt="YouTube" width="25" height="25">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <li class="site-footer-socials-item">
-            <a class="site-footer-social-item-link" href="#">
-              <img class="site-footer-social-img instagramm-icon" src="./images/instagramm-icon.svg"
-                alt="istagramm rasmi">
-            </a>
-          </li>
 
-          <li class="site-footer-socials-item">
-            <a class="site-footer-social-item-link" href="#">
-              <img class="site-footer-social-img telegramm-icon" src="./images/telegramm-icon.svg" alt="telegram rasmi">
-            </a>
-          </li>
-
-          <li class="site-footer-socials-item">
-            <a class="site-footer-social-item-link" href="#">
-              <img class="site-footer-social-img youtebe-icon" src="./images/youtebe.svg" alt="youtebe rasmi">
-            </a>
-          </li>
-
-        </ul>
       </div>
-    </div>
-    </div>
-  </footer>
+      </footer>
 
 </body>
 
