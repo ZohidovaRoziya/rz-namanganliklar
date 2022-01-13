@@ -112,36 +112,59 @@
       </h1>
 
       <div class="contact-page-content">
-        <form class="contact-page-form form"  action="https://echo.htmlacademy.ru" method="POST">
+          <div class="contact-page-form-wrapper">
+            <form class="contact-page-form"  action="https://echo.htmlacademy.ru" method="POST">
           
-          <div class="form-fields">
-           
-            <div class="form-groups-wrapper">
-              <div class="form-group">
-                <input class="form-field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+              <div class="form-fields">
+               
+                <div class="form-groups-wrapper">
+                  <div class="form-group">
+                    <input class="form-field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+                  </div>
+        
+                  <div class="form-group">
+                    <input class="form-field" type="tel" name="phone_number" placeholder="Номер телефона" aria-label="Номер телефона" required>
+                  </div>
+        
+                </div>
+    
+                <div class="form-group">
+                  <input class="form-field" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
+                </div>
+      
+                <div class="form-group">
+                  <textarea class="form-field form-field-textarea" name="massage" placeholder="Текст" aria-label="Текст" required></textarea>
+                </div>
               </div>
     
-              <div class="form-group">
-                <input class="form-field" type="tel" name="phone_number" placeholder="Номер телефона" aria-label="Номер телефона" required>
+              <div class="contact-page-form-submit-wrapper">
+                <button class="button-primary" type="submit">
+                  Отправить
+                </button>
               </div>
     
-            </div>
-
-            <div class="form-group">
-              <input class="form-field" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
-            </div>
-  
-            <div class="form-group">
-              <textarea class="form-field form-field-textarea" name="massage" placeholder="Текст" aria-label="Текст" required></textarea>
-            </div>
+            </form>
+    
           </div>
 
-          <button class="button button-primary">
-            Отправить
-          </button>
+        <div class="contact-page-info">
+          <dl class="contact-page-definations-card definitions-card">
+              <div class="definitions-card-item">
+                <dt class="definitions-card-title">Электронная почта</dt>
+                <dd class="definitions-card-value"><a class="definitions-card-value-link" href="mmailto:info@namanganliklar24.uz?subject=N24.uz%20saytidan%20xabar">info@namanganliklar24.uz</a></dd>
+              </div>
 
-        </form>
+              <div class="definitions-card-item">
+                <dt class="definitions-card-title">Номер телефона</dt>
+                <dd class="definitions-card-value"><a class="definitions-card-value-link" href="tel:+998885225476">+998 88 522-54-76</a></dd>
+              </div>
 
+              <div class="definitions-card-item">
+                <dt class="definitions-card-title">Адрес</dt>
+                <dd class="definitions-card-value">Ташкент, площадь Мустакиллик, 6 </dd>
+              </div>
+
+        </div>
       </div>
     </section>
 

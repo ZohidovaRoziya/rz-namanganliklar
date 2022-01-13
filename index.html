@@ -20,9 +20,14 @@
   <!-- Css Styles   -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- STYLES CSS MINIFIER LINK  -->
+  <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 
 <body>
+
+
 
   <!-- SITE HEADER Start  -->
   <header class="site-header">
@@ -296,8 +301,19 @@
           <h3 class="site-aside-text">
             Хотите быть в курсе свежих новостей? <br>Включите уведомления!
           </h3>
-          <a class="site-aside-link" href="#">Включит</a>
+          <a class="site-aside-link" id="aside_link_on" href="#">Включит</a>
         </aside>
+      </div>
+
+      <div class="hidden aside-modal-card" id="aside_modal_card">
+        <button class="modal-close-btn" id="modal_close_btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="aside-modal-info">
+          <h2 class="aside-modal-title">Хотите быть в курсе свежих новостей? Включите уведомления!
+          </h2>
+          <button class="site-aside-link modal-btn-link" id="aside_link_off">Включит</button>
+        </div>
       </div>
 
       <!-- MajorNews Section Start   -->
@@ -517,82 +533,88 @@
           Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с
           предварительного письменного разрешения редакции.
         </div>
-        
+
         <div class="site-footer-links-wrapper">
           <ul class="site-footer-links-list">
             <li class="site-footer-links-item">
-              <a class="site-footer-item-link"  href="#">
+              <a class="site-footer-item-link" href="#">
                 Информация о сайте
               </a>
             </li>
             <li class="site-footer-links-item">
-              <a class="site-footer-item-link"  href="./contact.html">
+              <a class="site-footer-item-link" href="./contact.html">
                 Напишите нам
               </a>
             </li>
             <li class="site-footer-links-item">
-              <a class="site-footer-item-link"  href="#">
+              <a class="site-footer-item-link" href="#">
                 Реклама
               </a>
             </li>
             <li class="site-footer-links-item">
-              <a class="site-footer-item-link"  href="#">
+              <a class="site-footer-item-link" href="#">
                 Прислать новость
               </a>
             </li>
           </ul>
-          
+
           <ul class="site-footer-links-list">
             <li class="site-footer-links-item">
-              <a class="site-footer-item-link"  href="#">
+              <a class="site-footer-item-link" href="#">
                 Использование материалов
               </a>
             </li>
             <li class="site-footer-links-item">
-              <a class="site-footer-item-link"  href="#">
+              <a class="site-footer-item-link" href="#">
                 Темы дня
               </a>
             </li>
             <li class="site-footer-links-item">
-              <a class="site-footer-item-link"  href="#">
+              <a class="site-footer-item-link" href="#">
                 Наша команда
               </a>
             </li>
-          </div>
         </div>
-          
-          <hr class="site-footer-divider">
-          
-          <div class="site-footer-socials-content">
-            <h2 class="site-footer-socials-heading">Наши социальные сети</h2>
-
-            <ul class="site-footer-socials-list">
-              <li class="site-footer-socials-item">
-                <a class="site-footer-socials-link" href="#" target="_blank">
-                  <img class="site-footer-socials-icon" src="./images/icon-facebook.svg" alt="Facebook" width="25" height="25">
-                </a>
-              </li>
-              <li class="site-footer-socials-item">
-                <a class="site-footer-socials-link" href="#" target="_blank">
-                  <img class="site-footer-socials-icon" src="./images/icon-instagram.svg" alt="Instagram" width="25" height="25">
-                </a>
-              </li>
-              <li class="site-footer-socials-item">
-                <a class="site-footer-socials-link" href="#" target="_blank">
-                  <img class="site-footer-socials-icon" src="./images/icon-telegram.svg" alt="Telegramm" width="25" height="25">
-                </a>
-              </li>
-              <li class="site-footer-socials-item">
-                <a class="site-footer-socials-link" href="#" target="_blank">
-                  <img class="site-footer-socials-icon" src="./images/icon-youtube.svg" alt="YouTube" width="25" height="25">
-                </a>
-              </li>
-            </ul>
-          </div>
-
-
       </div>
-      </footer>
+
+      <hr class="site-footer-divider">
+
+      <div class="site-footer-socials-content">
+        <h2 class="site-footer-socials-heading">Наши социальные сети</h2>
+
+        <ul class="site-footer-socials-list">
+          <li class="site-footer-socials-item">
+            <a class="site-footer-socials-link" href="#" target="_blank">
+              <img class="site-footer-socials-icon" src="./images/icon-facebook.svg" alt="Facebook" width="25"
+                height="25">
+            </a>
+          </li>
+          <li class="site-footer-socials-item">
+            <a class="site-footer-socials-link" href="#" target="_blank">
+              <img class="site-footer-socials-icon" src="./images/icon-instagram.svg" alt="Instagram" width="25"
+                height="25">
+            </a>
+          </li>
+          <li class="site-footer-socials-item">
+            <a class="site-footer-socials-link" href="#" target="_blank">
+              <img class="site-footer-socials-icon" src="./images/icon-telegram.svg" alt="Telegramm" width="25"
+                height="25">
+            </a>
+          </li>
+          <li class="site-footer-socials-item">
+            <a class="site-footer-socials-link" href="#" target="_blank">
+              <img class="site-footer-socials-icon" src="./images/icon-youtube.svg" alt="YouTube" width="25"
+                height="25">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </footer>
+
+  <div class="overlay hidden" id="overlay"></div>
 
 </body>
 
