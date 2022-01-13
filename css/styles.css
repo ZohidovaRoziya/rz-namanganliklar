@@ -64,13 +64,13 @@ body {
   top:0;
   left: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 1 !important;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* SITE HEADER Css Start   */
@@ -501,8 +501,8 @@ body {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  z-index: 2;
   background-color: #00ffff;
+  z-index: 10 !important;
 }
 
 .modal-close-btn {
