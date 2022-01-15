@@ -19,13 +19,17 @@ modal_close_btn_El.addEventListener("click", ()=>{
 })
 
 
-document.addEventListener("keydown", (e)=>{
+// DOCUMENT AND OVERLAY  LISTENING 
+document.addEventListener("click", (e)=>{
    if(e.target.classList[0] == "overlay"){
        overlay_El.classList.add("hidden")
     aside_modal_card_El.classList.add("hidden")
    }
 })
 
+
+
+// DOCUMENT AND KEYBOARD  LISTENING 
 document.addEventListener("keydown", (e)=>{
     console.log(e);
     if(e.keyCode == 27 || e.keyCode == 46 || e.keyCode === 13){
