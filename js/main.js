@@ -32,7 +32,7 @@ document.addEventListener("click", (e)=>{
 // DOCUMENT AND KEYBOARD  LISTENING 
 document.addEventListener("keydown", (e)=>{
     console.log(e);
-    if(e.keyCode == 27 || e.keyCode == 46 || e.keyCode === 13){
+    if(e.keyCode == 27 || e.keyCode == 46 || e.keyCode == 13){
         overlay_El.classList.add("hidden")
         aside_modal_card_El.classList.add("hidden")
     }
